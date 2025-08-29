@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صدقة جارية عن أموات المسلمين</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Amiri', serif;
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-green-700 text-white py-4 shadow-md sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <h2 class="text-1xl font-bold">أجر لا ينقطع</h2>
+            <nav class="space-x-4 space-x-reverse">
+                <a href="#home" class="hover:text-yellow-400">الرئيسية</a>
+                <a href="#duas" class="hover:text-yellow-400">الأدعية</a>
+                <a href="#quran" class="hover:text-yellow-400">القرآن الكريم</a>
+                <a href="#virtues" class="hover:text-yellow-400">فضائل الصدقة</a>
+                <a href="#donate" class="hover:text-yellow-400">التبرع</a>
+                <a href="#contact" class="hover:text-yellow-400"> أعمال صالحة</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-green-50 py-16 text-center">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-green-800 mb-4 animate-bounce"> قال ﷺ: "الصدقة تطفئ الخطيئة كما يطفئ
+                الماء النار"
+            </h2>
+            <p class="text-lg text-gray-700">اجعل لك ولأحبابك صدقة جارية، فإنها باب عظيم من أبواب الخير.</p>
+        </div>
+    </section>
+
+    <!-- Duas Section -->
+    <section id="duas" class="py-16 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-2xl font-bold text-green-800 mb-8">الأدعية</h3>
+            <div class="p-6 border rounded-2xl shadow max-w-xl mx-auto">
+                <p id="duaText" class="text-lg leading-relaxed mb-4">اللهم اغفر له وارحمه وعافه واعف عنه.</p>
+                <div class="flex justify-center space-x-4 space-x-reverse">
+                    <button onclick="prevDua()" class="bg-green-700 text-white px-4 py-2 rounded-lg">السابق</button>
+                    <button onclick="copyDua()" class="bg-yellow-500 text-white px-4 py-2 rounded-lg">نسخ
+                        الدعاء</button>
+                    <button onclick="nextDua()" class="bg-green-700 text-white px-4 py-2 rounded-lg">التالي</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Quran Section -->
+    <section class="py-16 bg-white">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-green-800 mb-3"> القرآن الكريم</h2>
+            <p class="text-gray-600 text-lg">  سور و آيات مختارة للتدبر  </p>
+        </div>
+
+        <!-- الحاوية -->
+        <div class="max-w-3xl mx-auto bg-green-50 border border-green-200 rounded-2xl shadow-sm p-8 text-center">
+            <p id="quran-text" class="text-lg text-gray-800 leading-relaxed font-semibold">
+                ﴿إِنَّ هَـٰذَا ٱلۡقُرۡءَانَ يَهۡدِي لِلَّتِي هِيَ أَقۡوَمُ﴾
+            </p>
+
+            <!-- أزرار التنقل -->
+            <div class="flex justify-center gap-4 mt-6">
+                <button onclick="prevAyah()"
+                    class="px-4 py-2 bg-green-600 text-white rounded-xl hover:bg-green-700 transition">السابق</button>
+                <button onclick="nextAyah()"
+                    class="px-4 py-2 bg-green-600 text-white rounded-xl hover:bg-green-700 transition">التالي</button>
+            </div>
+        </div>
+    </section>
+    <!-- Virtues Section -->
+    <section class="py-16 bg-white">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-green-800 mb-3">فضائل الصدقة</h2>
+            <p class="text-gray-600 text-lg">أحاديث نبوية تذكّرنا بعظم أجر الصدقة</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto px-6">
+
+            <!-- كارت -->
+            <div
+                class="bg-green-50 border border-green-200 rounded-2xl shadow-sm hover:shadow-lg transition duration-300 p-6">
+                <p class="text-gray-700 text-lg leading-relaxed text-center">
+                    قال رسول الله ﷺ: <br>
+                    <span class="font-semibold text-green-700">"ما نقص مال من صدقة".</span>
+                </p>
+            </div>
+
+            <!-- كارت -->
+            <div
+                class="bg-green-50 border border-green-200 rounded-2xl shadow-sm hover:shadow-lg transition duration-300 p-6">
+                <p class="text-gray-700 text-lg leading-relaxed text-center">
+                    قال رسول الله ﷺ: <br>
+                    <span class="font-semibold text-green-700">"داووا مرضاكم بالصدقة".</span>
+                </p>
+            </div>
+
+            <!-- كارت -->
+            <div
+                class="bg-green-50 border border-green-200 rounded-2xl shadow-sm hover:shadow-lg transition duration-300 p-6">
+                <p class="text-gray-700 text-lg leading-relaxed text-center">
+                    قال رسول الله ﷺ: <br>
+                    <span class="font-semibold text-green-700">"الصدقة تطفئ الخطيئة كما يطفئ الماء النار".</span>
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Donate Section -->
+    <section class="bg-green-50 py-10 px-4 text-center">
+        <h2 class="text-2xl font-bold text-green-800 mb-8">التبرع</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+            <!-- مؤسسة مصر الخير -->
+            <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+                <img src="data:image/webp;base64,UklGRjAUAABXRUJQVlA4ICQUAACQXACdASoeAR4BPp1MoUwlpCOiI3F6aLATiWNu4W/Q6yFb/vnvPbt/+b/rXJmGk7QMkHqU8wDnUeYjzbv9n+y3um/um+vehl0wOQ2eW/8320f6Do9/ZXuR60eXPrN1Mvkf3U/if4H3Bfwve/8f9QX23/r95tAB9bf+d4If+z6B/Zv2APJ3/ieDt9z/3HsC/zH+/fsz7DH/j/s/O/9Sf+/3Dv2H9Nz12/t//9/dc/apgEj6Qf4CR9IP8BI+kH+AkfSD/ASPpB/gJH0g/v0DjnbdWzFfDOm9DsCdO7KRHQf9LmCGzCeguwxN/8hiW29bAhWKtucKu0G3Qhjuepv5NbXigIRO70qA5EiQUb48grw8/yTduWs0pLeSgb4JKnBt0R04Z4R9HQ5joPHGXJFCHik5zqprLQWEAx18BIVorXelRFemdRTXp9ZUPPVWEGq28fKTRrzW7qq8nbiiNHOS61U1RX/AfymRmnEgd01jxn7JOFaEwsRffd37m4ECJDKYFpCLU8yX4hJFSaLqP0cz7sU1ZvPZC54g7xbgcNurFZMDS6QxL/c193r7HAHaZTbfSD+zWUPNWKzcrX5BN++91WP7XG6SHdQLFBdbtfV6dVdbspUNS/Vteyf76EuGG2aaRqYTISgpYvpPaat/LT/cUgyV4STgbPeQR5jOPzRGcdB/gHUasL82+6h4GICpja4T6TdgIM2rhsp9JcmEZwRT/+44XjHhiXJKDVoNuiauIlcze0IKGeJtpQ1oPAZrTec0zbRrBzXpx0o3bWLaddDP9QUMDbWALX0gkeww0frucTnC/HnRSaCtCvE6/mtMum8R0X4W/tE29Xa80vsNnE+GDY7LWCRCsj3qjma821+2qgsvwFsdMROYaRwRRPSvYT+fDfdmERXgQXMIiVhLxpvzzxSGKl96Di9YGQktLPSPZZiV4YJ9gHM5P/KCVEoJ/2van0hb3yq4FchwspyQi1cMNuqryfSD/ASPpB/gJH0gmAD+/xoQAAAAAAE29e6T4cG/XMnMcGT0BafpjSpwiVXbsO0ArFkRuywdMJUQk3vSJp9LO8SfWMIyTwb6Kp+TjNs5ttLVnG+tYRhU55rEe+UfF/5jx0zxzqjqXsaOOHq8I8+OEtrR9SOJtu3WBehUX9pEpzlB/Vv8bSP1gmc4CPDzxCT6Kd7JuQHFWegOl7NN/AA0NtYYwR5dzb1zPGn//bM6zn+/IqW5boXb5dX8tU1DEOUqlm7DaCgwkeFGALfyoJ+kfs7olP2+YZj50bfdvq/xw3dsJqyAg7iPDiSclRCUaLekxinul1rY/yGfAjJVXjwbZiY1XM+GdkE08RZE0XFGyDk9vP1DGyXnmHtSUYP+JW3Sub8VB42oVYq8/U7R+r34b/NnL95tkZ85qMz4ts/GG21p4UGW6gs0fQEzG+KIVDnULTpdzbDvl1aQaOys7TWIiG4Hkp+9uWf8tSIvsJvE1gbpkbL2ROPknt0m3o/ZRKt/j1iPErPMZ1Fo4mbkrqdFscy6LGLX9CXOf2+C+BTEsnQpInl4NGDmhKNIAf8b8SB3nu5ePVn2TKn9qE/bnYFaZ2aXD/cUfIW2uRYoRyv3ij9TGSNvRlXP/O0v9A72BVchPur1E3C/mQSzG/UigKEiJWTQruts8pfiMxWYN23/KExadSy2FlwuvLXSB2FU8Z5yja339vsaIvCdwIolZ+bVGzABQNyl2C/C9W1uDao3JJMiRyXqaOdC19ac+3PFiZMCoRaJSj5qOtbXwXy4+OYwGGyiDAaVehaWNmSWormtt8xpSZVsNvlF1tpz5Y9fgWEXY7nax6ffI/bjkVfaBWUskl6EhrMg+PrV8FLTYxaku4d1Yr+nsm8cO10bxNpFgxfUpmQ6pZaGr7OBfoA3E1FUohzJ1joq/0NHRIYMXRrPsB0NvaSPV5cYfZ+h0Y2aFvvmHRcM1OKZvBcEQw75nlh+KjEtkmbHqje5o3ohqbBOr1BsYmQixTC0714g7FWcp373i4LwKz6LKy5C7uei9LNIG4ONPaBz5vkRiqAP5R36bhYIHteqmCQqjsu5mWzF2BIkN+HaISvhJLyY1+m9ZRdmATA9GhHhQvx5tDuBki2Y+iNcbBHZ+Zz0S8no1eKrvkvlrhi1DOHUcIK4vo+KdqNvwtdZC03GxAF+BDBjPWzMT9GW2OJvIHHqvhk2pPqtH8yHCGx8JnEwTF0eGHiJ/ejdcY78+3btLpN1rBCRseXa/xL99FTVXB5GujK0cuNZCJV7hQJxkQDFjUX+4K7jBCrk5nqKl+W+0NKAE16s0QV9wHeRok1QExOv10Q2ZJLMfClqawk4tGzKGAtfMf8aIQDUvnhSVQPD3rKdKPIBAUFlpUl9OV46moEosNTfO/cn5if4qZbu2hKoNL7iHD/N2ZTd+aVhaicRWJB0m4KqhRRuLq9PBI5NCm0TTIrfdYNc43wQa77+uXuH9LRc+HYNLMkFWWcNlz+quKKjTZR4BIeHw4FAq0NqkXI0QH7er9YfTVtwuwh3M0/1K0CZ2IQIEmFYa39TWK0eXB35fbZvL81LLA/C2YeqRR5d22fAoQlnXtDFISkOIbW3nK1Ft2tcnj3ZZdSiNw798ct6C01ffphyVSxrhWByhbGNIwKLTxrTii/mw/dIT+MIRDRP08LE5rm2gzLv4B43Z4SwThwdrWj0gEkglS+3jMkKb8ED8XvhqzTSZsLQMbXjGwQbI/VeyCOtiDhZIrNmczAihA/pi/lNLbrgxTb4BFYWRoTXoOfXqAusio2NvTOw88m+BRzEdnROQ8CpCIfUEXFP0RO4Yvw9BbGI4miiSAWvAKAso3rzo/e5n/M+QOpKmsDxk4iQl2SRo/Qr5f5tN/qQHvqmwy0C1KcQrsxK0XA5kyufcHVTUKl5zu59ztVCwzFspPU/HD9eHFFeJzChNkYAA17a4bTV/iQDzV/pu20AQVXW5yHVUPWcH8ARY3fyQxBO0JdUweKkxWETfDSHiYOV0iPNvgRPVm29O8ZPG3ckfi8O+HQ5H3ZUjvGb3wlLm0AZ2qgcGKmMZEiZY5QCOekxNYj+wpC4FKqS3nS3i0z1eNdGOkNLl3xha9EdEM+MRtfaHMuW4h/pCxUGSfELpwdXiq95BPIITVRSDUNTUUM+AiLrCGn+zhDk33lf9xRwtbJVlRPlJNcHn5fiH2x3NSUfl86q5P7hUTieTIMCpK9vcCbq4wjuHh4XCG/10mbEcgACxVTvoS94U2p8IldRWOFiuAAT/Slu6bneXRJGLeeHGLjksA507bpfvt58KXQNK/78m1tdaVywIWK1S62b8jOYbv/0MQJTsI3fyFMrajDrHiD9Hz1Gufg70A8qDncAx8FmWxfclwa0aj9XiIoqU7KtafCDZLJZsiQU8EXjEJSfeDo6dY/rsszcmDoUOk3R9eWU+qLiTDThp8/zY+3KNitfP/En8CJ8m07FXXdm/lcPb1nXq4NrqkLWlvgLsAZorS8I1c4KhdaoWgE0b4jVTvPGBXlX/3AtXQgx3n0tIIQHqrKGgfj76ytguMwXXhjl+CkqlTxOAqns0+vzrdswS21mqITjCUZFSLUCAQzxZ8ZFaIWP5nC5uK5kN0qX2VaikfX4cndz/VWEeQWJvpnI37QZguFziL/k9SRvnw/kkKDRAcbN8M22uRdij9PXYLzDChyxt90jo9/Z0en3hCHb0FkAUAi6ujBcudtRN056NU0wBL1HcLbkxcw4UFc7OG3QnekH8VPpdtJEg1rGZKkzH4ZyMUJr2X9fvqRiFZQSAXawbZVJTa7Fj+9M1PzolzGzGO6VxxANNiCQTlDdCopZhFS4/3NRSqMNY1xojQMOMJEXKkuHRgAQuvSQIab8gPDnElc/gIOmyNwTmqu0ON2jYx3fViokr0gye9OjKlPTMfnuWSEKtDms+u/jJ2D9eQaJwT4H4HwvLmJlskEgLx1iZzw7aHUli0mrZ3SE6nM9SPVqR4vDtS89OW4IbAbtcT2oODwf6eJrKWdUMxmatUAEoqdxih3bw3RKxFrAKQimZhkLRIZmY5fuL7QDAT7N1Ici/qwZpGdLUAy4UiBlZOjMEAr0vLIHsCYwLalyNiO1QcE7wTEIn83yqMvujrNYo8phq9YuDWs02EFvn6PTtwVawN2A72JE1uoz3w3Uv2GXO6FxJ3T5LytLc/mBF1I6ThWg3RtjPfX+xAF4ciutYO9NQGfCMl11O1iN9LDQ75SvEMHAFv8GW+IclVKnd+mj+rdreQl90AktlTx9aJOu4bM4+8FSI7wQO5VVOoFRxilzPAUklljtaG8XAqDKnfuu9VKF/S+SHHVE/67QEqcygWWEfLZqbPUNcJD9LQMLIb3I1i4RPh+CXLKPvfaPDLzN+qnFdhXLMm4M3PYtfQDOz9EB2c7jvx/zGWJmsJNlMfLNeEUmgTymHQcP6Zn+59G94bgJdBlIGLfyIm4CJuEbadYFAChJHXSPaEX7G2S2t1zBcyBCfzWhzEB5CSYy5fQeWqYI5fh51s+eQZiy0RF070OWquyh2vbV5xdgHp+bw/DsZA1vTjP9xGYphZvnV1Qip8G6nkSBRmbTjIIyvDgUjgBzsGwvF/JlThrZq/EaAEl/EdWIKxBLKZq2xOWa3v+L95mgoj6zQe9AgUwoAnUoTmYKXmCcwAyHZtGPfzAJ5r139h6o1haMvwfMly4GMQnhE+k1Al4dBpZPxrAxDz9oK69f9xKNWSV/xQvxp6WkvgRSUlvGE3c54GLsI2zi+eS2937FfFv1copZs/ioFXODmJtaQ/JXDiKTYzJgFdliSXCAYv2dsWTaWoM2Il0rGM042ERXQkNX6v7XdSMEWwc9x5Bvdl1t9RAz5kcYv6mEV09H+WLyef+WEavPMCf94TwT8bItNFQBYP9XDFk4a6/+65Xj7L4+Yv+6KX0C99ss5tieIY79y3fbBQbCM3vDseyzS0SNmmGIWjvLHtvQ/CwiFngoLAjzTLa/V81FHoV/ifp8rbYdNtm5O828vfM224BqjdIZl4nLbJZLU8GqS4l5QJpJ88F1Grio3Xh9tJQCOdaig8KbzbOfUhWgigBW2BhJn3uvPI0IrKbbDOvdNT7VTV7O+4W2znFTkCe7TrR2JY8NBwP+y7kMTH/p5+kLfszrmLSBgEvMuYsOD6J7740q9nvyrcsjAozZEiqGR8kjELuyqw9qbyXBrjvP4YLa2mZftcRY7HA6I29O2SxEGf4UTbASdk6d1OEpQ3mkd767tFndSGGOUrSCi1Eh7kQUwZt1i49UwN2QSY0GPKIkchjSRuYceuLRtCwunmY2F84FDr6ZN3H1UL6ahFP3xpFByg15i6DNgm0tci3BQcPkHKFOm4en//u8vvf/RqiL1Ss2HcBM5eiaTQLZfcr3Mv+GqKbwGa0bvC2qjGXT/wGsWWzax/v5YXZWDuVnsoeTMcaTeTmRxpxWFvM7SnkJ0mLawHyiBxRreOdsYQbZf603+BbwcjUNA3HbxsTbCVSWmMFIRRvjzZ4dqy6ngOvnFFgHkh3oROjJK53xo2OXMP+ZGiz1gJKcjvoAd8am1IBv0fhojcSZHjNxv0wre+jH35iQ7VsrZnjeoAjxpwOefIs8XIDCdVfq7zjAjcw4MIcYuMQcrLgiUMmARNpNU5AqCJydKGiALLAc/r2xfjzdjMdIO60kpuh1jOVn5HJU1ecVW/GAxWoAm/TIAT91oOvQL5i1WJDul4DUZ7ZAcrvyvCGPfR6Qgr0Y82BcyW2VlXY2maZvl3NwdTyALboeZs6iMYpKc0kQCB/t2oSJghEENZ94/Umeuj9HIQ0zEFTvK1CR7+iuoMtvmEWwbsjjgqTklL8Tv8iQa6AdsN43R5yfqx+qLiFzEO+5Xhjd1AW2HXNHznfgROC71bfEbfDBma5e7Ra2r/Y8ULutJRpU8ijsgqHxma/Y79ryYqZLkQ3eL0XBNJJYXAnlpGNbM7THjJSm781Jra1g+8XKPZAD3vi8k2guyV8RlMiilc7Wx+O56ozE6md61BzTYiIA1qsNEnOK0h9asXtfGzP/SN6p1dBg5WIO+HuWVME/ChfoxwmT7R7Y6pq/1t+m+rzGl+zf+b4oJjZDgxKQy+cDkKmbNpdT4FSN6OuVkRGYsCH42qo+G29fT5WaZ+oMUVKji+mmSSc1pHuVXd67hcxmK9ETDWRpoG1RM0roTF/p55i4j3hWo78e12zQkxoknIPgWMLL3KsCVGZ2p+A0dVnsAYDxWRk6rJBdEEEDu8RrvRlHgV1GLhKBusiRbQefYq7APOpVT3uxccDhRA4G84LWiE+6OsnzNy3StgHaQakeyxoJpxRL2YH8FOGfAz3Uqoe3kivRXiket/xn61YtRtgFZt03QLmK70V9G5QbGoacTFZsaY34v/SrVdGBWJ0+R3TwtoGT8UA1yQMnzEPkQKJwiCt8J3BvmwOEHow49Kono3cPbXTJGe5VspuSbfAcwHLAZR0M6/SW+CktZ27u92s8jPItut/xR7tZafMBi5PL1i1VTTQEzNFX9+77I7eBGPkkEHe/zPmndLRIFLaOAZtbd1nagAxUN9xiG4Vpcv111PRA9g/4Vng4Po42ZnCKwa5jxrIhNw/gpsVsN82ECay63bd/qaDUCNiJWCQZl7FDBWJcyMskkHg96w9P5sP02fnij+nAXez2dOYwo9sND9m2H7CL/yPcMcWA/ZYBdeIeDJkOW41nITleHO3Qh2quuFYak2n7sNVayHEjnzWBC8VhzFGDMw9ksYDdN9M3rTWjQAvL/VORRiQWWBb00qoU+FZ8P2c1SX46WCOFvdpSMQjSyliAoPLwrp9IwALohBn8/frC5jhvtQeuMupdVnsxCbZVMTAAIwBK9gAAAAAAAA=="
+                    alt="مصر الخير" class="mx-auto h-20 mb-4">
+                <h3 class="text-xl text-yellow-700 font-semibold mb-2">مؤسسة مصر الخير</h3>
+                <p class="mb-2 text-gray-700">للتبرع: اتصل على <span class="font-bold">16140</span></p>
+                <a href="https://misrelkheir.org/" target="_blank"
+                    class="inline-block mt-3 bg-green-600 text-white py-2 px-4 rounded-lg hover:bg-green-700">الموقع
+                    الرسمي</a>
+            </div>
+
+            <!-- بنك الطعام المصري -->
+            <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+                <img src="data:image/webp;base64,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"
+                    alt="بنك الطعام المصري" class="mx-auto h-20 mb-4">
+                <h3 class="text-xl text-yellow-700 font-semibold mb-2">بنك الطعام المصري</h3>
+                <p class="mb-2 text-gray-700">للتبرع: اتصل على <span class="font-bold">16060</span></p>
+                <a href="https://egyptianfoodbank.org/" target="_blank"
+                    class="inline-block mt-3 bg-green-600 text-white py-2 px-4 rounded-lg hover:bg-green-700">الموقع
+                    الرسمي</a>
+            </div>
+
+            <!-- مستشفى 57357 -->
+            <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+                <img src="data:image/webp;base64,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"
+                    alt="57357" class="mx-auto h-20 mb-4">
+                <h3 class="text-xl text-yellow-700 font-semibold mb-2">مستشفى 57357</h3>
+                <p class="mb-2 text-gray-700">للتبرع: اتصل على <span class="font-bold">75375</span></p>
+                <a href="https://www.57357.org/" target="_blank"
+                    class="inline-block mt-3 bg-green-600 text-white py-2 px-4 rounded-lg hover:bg-green-700">الموقع
+                    الرسمي</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <!-- قسم الأعمال الصالحة اليومية -->
+<section class="bg-white-50 py-12">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl font-bold text-green-800 mb-6">أعمال صالحة للقيام بها اليوم</h2>
+    <p id="goodDeed" class="text-lg text-gray-700 mb-6">جارٍ تحميل اقتراح...</p>
+    <button id="newDeedBtn" class="bg-green-700 text-white px-6 py-2 rounded-lg hover:bg-green-800 transition">
+      عرض اقتراح جديد
+    </button>
+  </div>
+</section>
+
+    <!-- الفوتر -->
+    <footer class="bg-green-700 text-white text-center py-4 mt-10">
+        <p>اللهم اجعل هذا العمل خالصًا لوجهك الكريم</p>
+    </footer>
+
+    <!-- Footer -->
+
+    <!-- JS -->
+    <script>
+        function copyText(btn) {
+            const text = btn.previousElementSibling.innerText;
+            navigator.clipboard.writeText(text).then(() => {
+                btn.innerText = "✔ تم النسخ";
+                setTimeout(() => btn.innerText = "نسخ الدعاء", 2000);
+            });
+        }
+        const duas = [
+            "اللهم اجعل قبره روضة من رياض الجنة ولا تجعله حفرة من حفر النار.",
+            "اللهم انس وحشته ونور قبره واجعل الجنة داره وقراره.",
+            "اللهم اجعل عمله الصالح شفيعًا له يوم القيامة.",
+            "اللهم اجمعنا به في الفردوس الأعلى من غير حساب ولا عذاب.",
+            "اللهم اغفر له وارحمه وتجاوز عن سيئاته واجعل قبره طيبًا طاهرًا.",
+            "اللهم ارحمه فوق الأرض وتحت الأرض ويوم العرض عليك.",
+            "اللهم اجعل القرآن شفيعًا له ونورًا في قبره.",
+            "اللهم يمن كتابه ويسر حسابه واجعل الجنة مثواه.",
+            "اللهم اغسله بالماء والثلج والبرد ونقه من الخطايا كما ينقى الثوب الأبيض من الدنس.",
+            "اللهم جازه بالحسنات إحسانًا وبالسيئات عفوًا وغفرانًا.",
+            "اللهم اجعل قبره روضة من رياض الجنة وافتح له بابًا إلى الجنة.",
+            "اللهم اربط على قلوب أهله وارزقهم الصبر والسلوان.",
+            "اللهم اجعل عمله الصالح في موازين حسناته واجعل البركة في ذريته.",
+            "اللهم اجعل لحده نورًا وعلى الصراط مرورًا وإلى الجنة دخولًا.",
+            "اللهم ارزقه لذة النظر إلى وجهك الكريم والشوق إلى لقائك.",
+            "اللهم اجعله من الذين سعدوا في الجنة خالدين فيها ما دامت السماوات والأرض.",
+            "اللهم أبدله دارًا خيرًا من داره، وأهلاً خيرًا من أهله.",
+            "اللهم عامله بما أنت أهله ولا تعامله بما هو أهله.",
+            "اللهم إنه عبدك وابن عبدك يحتاج إلى رحمتك وأنت غني عن عذابه.",
+            "اللهم اجعل كلماته الطيبة صدقة جارية له وذكره بين الناس دعاءً دائمًا.",
+            "اللهم اجعل مرضه كفارةً لذنوبه ورفعةً لدرجاته.",
+            "اللهم اجعل الملائكة تأنس وحدته وتبشره بروح وريحان.",
+            "اللهم اجعل روحه في عليين مع النبيين والصديقين والشهداء والصالحين.",
+            "اللهم اجعل آخرته خيرًا من دنياه وموته راحةً له من كل بلاء.",
+            "اللهم لا تحرمه أجره ولا تفتنا بعده واغفر لنا وله."
+        ];
+        let currentIndex = 0;
+        const duaText = document.getElementById("duaText");
+
+        function showDua() {
+            duaText.innerText = duas[currentIndex];
+        }
+        function nextDua() {
+            currentIndex = (currentIndex + 1) % duas.length;
+            showDua();
+        }
+        function prevDua() {
+            currentIndex = (currentIndex - 1 + duas.length) % duas.length;
+            showDua();
+        }
+        function copyDua() {
+            navigator.clipboard.writeText(duas[currentIndex]).then(() => {
+                alert("تم نسخ الدعاء ✅");
+            });
+        }
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        const ayat = [
+            `سورة الفاتحة 
+
+            بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ (1)
+ٱلۡحَمۡدُ لِلَّهِ رَبِّ ٱلۡعَٰلَمِينَ (2)
+ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ (3) مَٰلِكِ يَوۡمِ ٱلدِّينِ (4)
+إِيَّاكَ نَعۡبُدُ وَإِيَّاكَ نَسۡتَعِينُ (5) ٱهۡدِنَا
+ٱلصِّرَٰطَ ٱلۡمُسۡتَقِيمَ (6) صِرَٰطَ ٱلَّذِينَ أَنۡعَمۡتَ
+عَلَيۡهِمۡ غَيۡرِ ٱلۡمَغۡضُوبِ عَلَيۡهِمۡ
+وَلَا ٱلضَّآلِّينَ (7)
+            
+            
+            `,
+
+            `آية الكرسي – البقرة 255
+اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ ۚ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ ۚ لَهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ ۗ مَنْ ذَا الَّذِي يَشْفَعُ عِنْدَهُ إِلَّا بِإِذْنِهِ ۚ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ ۖ وَلَا يُحِيطُونَ بِشَيْءٍ مِنْ عِلْمِهِ إِلَّا بِمَا شَاءَ ۚ وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ ۖ وَلَا يَئُودُهُ حِفْظُهُمَا ۚ وَهُوَ الْعَلِيُّ الْعَظِيمُ`,
+
+            `خواتيم سورة البقرة (285-286)
+آمَنَ الرّسُولُ بِمَآ أُنْزِلَ إِلَيْهِ مِن رّبّهِ وَالْمُؤْمِنُونَ كُلّ آمَنَ بِاللّهِ وَمَلآئِكَتِهِ وَكُتُبِهِ وَرُسُلِهِ لاَ نُفَرّقُ بَيْنَ أَحَدٍ مّن رّسُلِهِ وَقَالُواْ سَمِعْنَا وَأَطَعْنَا غُفْرَانَكَ رَبّنَا وَإِلَيْكَ الْمَصِيرُ * لاَ يُكَلّفُ اللّهُ نَفْساً إِلاّ وُسْعَهَا لَهَا مَا كَسَبَتْ وَعَلَيْهَا مَا اكْتَسَبَتْ رَبّنَا لاَ تُؤَاخِذْنَا إِن نّسِينَآ أَوْ أَخْطَأْنَا رَبّنَا وَلاَ تَحْمِلْ عَلَيْنَآ إِصْراً كَمَا حَمَلْتَهُ عَلَى الّذِينَ مِن قَبْلِنَا رَبّنَا وَلاَ تُحَمّلْنَا مَا لاَ طَاقَةَ لَنَا بِهِ وَاعْفُ عَنّا وَاغْفِرْ لَنَا وَارْحَمْنَآ أَنتَ مَوْلاَنَا فَانْصُرْنَا عَلَى الْقَوْمِ الْكَافِرِينَ
+`,
+
+            `سورة يس 
+يسٓ ﴿1﴾ وَٱلۡقُرۡءَانِ ٱلۡحَكِيمِ ﴿2﴾ إِنَّكَ لَمِنَ ٱلۡمُرۡسَلِينَ ﴿3﴾ عَلَىٰ صِرَٰطٖ مُّسۡتَقِيمٖ ﴿4﴾ تَنزِيلَ ٱلۡعَزِيزِ ٱلرَّحِيمِ ﴿5﴾ لِتُنذِرَ قَوۡمٗا مَّآ أُنذِرَ ءَابَآؤُهُمۡ فَهُمۡ غَٰفِلُونَ ﴿6﴾ لَقَدۡ حَقَّ ٱلۡقَوۡلُ عَلَىٰٓ أَكۡثَرِهِمۡ فَهُمۡ لَا يُؤۡمِنُونَ ﴿7﴾ إِنَّا جَعَلۡنَا فِيٓ أَعۡنَٰقِهِمۡ أَغۡلَٰلٗا فَهِيَ إِلَى ٱلۡأَذۡقَانِ فَهُم مُّقۡمَحُونَ ﴿8﴾ وَجَعَلۡنَا مِنۢ بَيۡنِ أَيۡدِيهِمۡ سَدّٗا وَمِنۡ خَلۡفِهِمۡ سَدّٗا فَأَغۡشَيۡنَٰهُمۡ فَهُمۡ لَا يُبۡصِرُونَ ﴿9﴾ وَسَوَآءٌ عَلَيۡهِمۡ ءَأَنذَرۡتَهُمۡ أَمۡ لَمۡ تُنذِرۡهُمۡ لَا يُؤۡمِنُونَ ﴿10﴾`,
+
+            `سورة الملك 
+      تَبَٰرَكَ ٱلَّذِي بِيَدِهِ ٱلۡمُلۡكُ وَهُوَ عَلَىٰ كُلِّ شَيۡءٖ قَدِيرٌ ﴿1﴾ ٱلَّذِي خَلَقَ ٱلۡمَوۡتَ وَٱلۡحَيَوٰةَ لِيَبۡلُوَكُمۡ أَيُّكُمۡ أَحۡسَنُ عَمَلٗاۚ وَهُوَ ٱلۡعَزِيزُ ٱلۡغَفُورُ ﴿2﴾ ٱلَّذِي خَلَقَ سَبۡعَ سَمَٰوَٰتٖ طِبَاقٗاۖ مَّا تَرَىٰ فِي خَلۡقِ ٱلرَّحۡمَٰنِ مِن تَفَٰوُتٖۖ فَٱرۡجِعِ ٱلۡبَصَرَ هَلۡ تَرَىٰ مِن فُطُورٖ ﴿3﴾ ثُمَّ ٱرۡجِعِ ٱلۡبَصَرَ كَرَّتَيۡنِ يَنقَلِبۡ إِلَيۡكَ ٱلۡبَصَرُ خَاسِئٗا وَهُوَ حَسِيرٞ ﴿4﴾ وَلَقَدۡ زَيَّنَّا ٱلسَّمَآءَ ٱلدُّنۡيَا بِمَصَٰبِيحَ وَجَعَلۡنَٰهَا رُجُومٗا لِّلشَّيَٰطِينِۖ وَأَعۡتَدۡنَا لَهُمۡ عَذَابَ ٱلسَّعِيرِ ﴿5﴾ وَلِلَّذِينَ كَفَرُواْ بِرَبِّهِمۡ عَذَابُ جَهَنَّمَۖ وَبِئۡسَ ٱلۡمَصِيرُ ﴿6﴾ إِذَآ أُلۡقُواْ فِيهَا سَمِعُواْ لَهَا شَهِيقٗا وَهِيَ تَفُورُ ﴿7﴾ تَكَادُ تَمَيَّزُ مِنَ ٱلۡغَيۡظِۖ كُلَّمَآ أُلۡقِيَ فِيهَا فَوۡجٞ سَأَلَهُمۡ خَزَنَتُهَآ أَلَمۡ يَأۡتِكُمۡ نَذِيرٞ ﴿8﴾ قَالُواْ بَلَىٰ قَدۡ جَآءَنَا نَذِيرٞ فَكَذَّبۡنَا وَقُلۡنَا مَا نَزَّلَ ٱللَّهُ مِن شَيۡءٍ إِنۡ أَنتُمۡ إِلَّا فِي ضَلَٰلٖ كَبِيرٖ ﴿9﴾ وَقَالُواْ لَوۡ كُنَّا نَسۡمَعُ أَوۡ نَعۡقِلُ مَا كُنَّا فِيٓ أَصۡحَٰبِ ٱلسَّعِيرِ ﴿10﴾
+`,
+
+            `سورة الواقعة 
+            إِذَا وَقَعَتِ ٱلۡوَاقِعَةُ (1) لَيۡسَ لِوَقۡعَتِهَا كَاذِبَةٌ (2) خَافِضَةٞ رَّافِعَةٌ (3) إِذَا رُجَّتِ ٱلۡأَرۡضُ رَجّٗا (4) وَبُسَّتِ ٱلۡجِبَالُ بَسّٗا (5) فَكَانَتۡ هَبَآءٗ مُّنۢبَثّٗا (6) وَكُنتُمۡ أَزۡوَٰجٗا ثَلَٰثَةٗ (7) فَأَصۡحَٰبُ ٱلۡمَيۡمَنَةِ مَآ أَصۡحَٰبُ ٱلۡمَيۡمَنَةِ (8) وَأَصۡحَٰبُ ٱلۡمَشۡـَٔمَةِ مَآ أَصۡحَٰبُ ٱلۡمَشۡـَٔمَةِ (9) وَٱلسَّٰبِقُونَ ٱلسَّٰبِقُونَ (10) أُوْلَٰٓئِكَ ٱلۡمُقَرَّبُونَ (11) فِي جَنَّٰتِ ٱلنَّعِيمِ (12) ثُلَّةٞ مِّنَ ٱلۡأَوَّلِينَ (13) وَقَلِيلٞ مِّنَ ٱلۡأٓخِرِينَ (14) عَلَىٰ سُرُرٖ مَّوۡضُونَةٖ (15) مُّتَّكِـِٔينَ عَلَيۡهَا مُتَقَٰبِلِينَ (16) يَطُوفُ عَلَيۡهِمۡ وِلۡدَٰنٞ مُّخَلَّدُونَ (17) بِأَكۡوَابٖ وَأَبَارِيقَ وَكَأۡسٖ مِّن مَّعِينٖ (18) لَّا يُصَدَّعُونَ عَنۡهَا وَلَا يُنزِفُونَ (19) وَفَٰكِهَةٖ مِّمَّا يَتَخَيَّرُونَ (20)
+`,
+
+            `سورة الإخلاص
+قُلْ هُوَ اللَّهُ أَحَدٌ (١) اللَّهُ الصَّمَدُ (٢) لَمْ يَلِدْ وَلَمْ يُولَدْ (٣) وَلَمْ يَكُن لَّهُ كُفُوًا أَحَدٌ (٤)`,
+
+            `سورة الفلق
+قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ (١) مِن شَرِّ مَا خَلَقَ (٢) وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ (٣) وَمِن شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ (٤) وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ (٥)`,
+
+            `سورة الناس
+قُلْ أَعُوذُ بِرَبِّ النَّاسِ (١) مَلِكِ النَّاسِ (٢) إِلَٰهِ النَّاسِ (٣) مِن شَرِّ الْوَسْوَاسِ الْخَنَّاسِ (٤) الَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاسِ (٥) مِنَ الْجِنَّةِ وَالنَّاسِ (٦)`
+        ];
+
+        let current = 0;
+        const quranText = document.getElementById("quran-text");
+
+        function showAyah() {
+            quranText.innerText = ayat[current];
+        }
+
+        function nextAyah() {
+            current = (current + 1) % ayat.length;
+            showAyah();
+        }
+
+        function prevAyah() {
+            current = (current - 1 + ayat.length) % ayat.length;
+            showAyah();
+        }
+
+const deeds = [
+  "اقرأ جزء من القرآن النهاردة",
+  "اعمل صدقة بسيطة حتى لو جنيه واحد",
+  "زور حد مريض أو كلمه واسأله عن صحته",
+  "ساعد جار أو صاحب محتاج أي حاجة بسيطة",
+  "ادعي لنفسك ولغيرك دعاء حلو",
+  "اقرأ حديث أو آية وفكر فيها شويه",
+  "ابتسم في وش أي حد تقابله النهاردة",
+  "اكتب دعاء أو ذكر في ورقة أو دفتر",
+  "ابعث رسالة حلوة لشخص بتحبه",
+  "شارك معلومة مفيدة على السوشيال ميديا",
+  "نضف مكانك أو رتب حاجاتك النهاردة",
+  "سأل حد محتاج مساعدة أو اسمع له",
+  "اقرأ قصة قصيرة مفيدة لأطفال أو شباب",
+  "اعمل حاجة لطيفة لأي حد حواليك بدون ما يقلك",
+  "اسمع قرآن أو أناشيد إسلامية وانت مستريح"
+];
+
+  const deedElement = document.getElementById("goodDeed");
+  const button = document.getElementById("newDeedBtn");
+
+  function showRandomDeed() {
+    const randomIndex = Math.floor(Math.random() * deeds.length);
+    deedElement.textContent = deeds[randomIndex];
+  }
+
+  // عرض اقتراح عند تحميل الصفحة
+  showRandomDeed();
+
+  // تغيير الاقتراح عند الضغط على الزر
+  button.addEventListener("click", showRandomDeed);
+    </script>
+
+</body>
+
+</html>
